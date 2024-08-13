@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hola, mundo!');
+  res.send('Hola, mundo!', clientIp);
 });
 
 app.listen(port, () => {
